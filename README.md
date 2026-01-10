@@ -7,8 +7,11 @@ Patika.dev Object Oriented Programming course.
 The purpose of this assignment is to understand object-oriented design
 principles before implementing them in code.
 
-## UML Diagram
-The class diagram below represents the designed system:
+## UML Diagrams
+
+The class diagram is stored in the `uml/` folder as both:
+- `class-diagram.drawio` – editable source
+- `class-diagram.png` – visual representation
 
 ![UML Diagram](uml/class-diagram.png)
 
