@@ -13,7 +13,7 @@ The class diagram is stored in the `uml/` folder as both:
 - `class-diagram.drawio` – editable source
 - `class-diagram.png` – visual representation
 
-![UML Diagram](uml/class-diagram.png)
+![UML Diagram](uml/class-diagram.drawio.png)
 
 ## Notes
 - The project currently focuses on design, not implementation.
