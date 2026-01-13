@@ -56,13 +56,37 @@ public abstract class Doping {
 	}
 
 	public void setPrice(double price) {
-		this.price = price;
+		this.price = price; // sol taraf: field(nitelikler), sağ taraf: parametre
 	}
 
 	// soyut metot örneği
 	public abstract double calculate();
 }
 ```
+1️⃣ this nedir?
+
+this = “şu anki nesne”
+Bir sınıfın kendi içindeki alanına veya metoduna erişmek için kullanılır.
+
+**this ne zaman kullanılır?**
+
+- Field ile parametre aynı isimdeyse
+- Aynı sınıftaki başka constructor çağrılacaksa
+- Nesnenin kendisini işaret etmek istiyorsan
+
+2️⃣ super nedir?
+super = “üst sınıfın hali”
+
+
+3️⃣ this vs super zihinsel fark: 
+| Durum               | `this`                    | `super`          |
+| ------------------- | ------------------------- | ---------------- |
+| Kimi temsil eder    | Mevcut sınıf              | Üst sınıf        |
+| Field erişimi       | Aynı sınıf                | Parent           |
+| Metot çağrısı       | Override edilmiş olabilir | Parent versiyonu |
+| Constructor çağrısı | `this()`                  | `super()`        |
+
+
 Yukarıda soyut bir sınıf tanımladık. "abstract" kelimesi ile sınıf tanımladık, ayrıca sınıfın içinde "calculate" isimli "abstract" metot tanımladık. Aynı zamanda soyut olmayan metotlar da tanımladık. Senaryomuzda bir e-ticaret sisteminde "Doping" tipinde ek ürünler olduğunu düşünelim. İlan tarihini güncelleyen bir doping çeşidimiz olsun, bir de üst sırada çıkmanızı sağlayan bir doping olsun. Bu iki alt sınıfta "Doping" isimli sınıftan kalıtım alarak belli özellikleri kendilerine alsınlar. Fakat, her dopingin ücret hesaplama yöntemi birbirinden farklı olabilir. Ayrıca, her dopingin mutlaka fiyat hesaplama fonksiyonu olmalıdır.
 
 Yukarıdaki durumda "abstract" sınıf tanımlayıp diğer doping çeşitleri bu Super Class sınıftan kalıtım alacaklardır. "calculate" isimli "abstract" metodu, "metod ezme" (overriding) yöntemiyle ezip metodun içini kendilerine göre dolduracaklardır. Sub Class sınıflardaki diğer özellikler soyutlama tekniğiyle dış dünyadan gizlenecektir. Dış dünyadan dopingi kullanmak isteyen baka bir sınıf veya kod parçası doping nesnesi üzerindeki "calculate" fonksiyonunu çağırıp fiyatı hesaplayacaktır. Diğer iç hesaplama ve çalışma detaylarını bilmeyecektir.
@@ -71,7 +95,7 @@ Yukarıdaki durumda "abstract" sınıf tanımlayıp diğer doping çeşitleri bu
 public class TopOfListDoping extends Doping {
 
 	public TopOfListDoping(double price) {
-		super.setPrice(price);
+		super.setPrice(price); // “Üst sınıfın (Doping) setPrice metodunu çağır” Nokta (.) burada metot çağırma operatörü.
 	}
 
 	// "Doping" soyut sınıfından kalıtımla gelen, "calculate" isimli soyut metodu metot ezmesi yöntemiyle alt sınıf kendi ihtiyacına göre dolduruyor.
