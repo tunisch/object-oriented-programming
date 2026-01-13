@@ -8,3 +8,6 @@ This folder contains UML class diagrams created during the design phase.
 
 2)
 <img width="947" height="518" alt="image" src="https://github.com/user-attachments/assets/a19c6ece-c834-4a25-aa81-da4b1ccb8628" />
+
+3)
+<img width="936" height="457" alt="image" src="https://github.com/user-attachments/assets/9a7d905b-92cd-4e66-9471-3228c48078f4" />
