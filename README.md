@@ -39,8 +39,8 @@ Aşağıdaki gibi organize edilmiştir:
 
 UML diyagramı `uml/` klasöründe bulunur:
 
-- [class-diagram.drawio](uml/class-diagrams) → Bu dosyayı draw.io, diagrams.net vb. ile açıp düzenleyebilirsin.
-- [class-diagram.png](uml/class-diagram.png)`  → Diyagramın görsel hali.
+- [class-diagram.drawio](uml/class-diagrams-draw.io) → Bu dosyayı draw.io, diagrams.net vb. ile açıp düzenleyebilirsin.
+- [class-diagram.png](uml/class-diagrams-png)  → Diyagramın görsel hali.
 
 Bu diyagram, sınıflar arasındaki ilişkileri ve OOP prensiplerini gösterir.
 
@@ -80,7 +80,7 @@ cd object-oriented-programming
 
 ### 2. UML Dosyasını İncele
 
-[class-diagram.png](uml/class-diagram.png) dosyasını açarak tasarımı görsel olarak inceleyebilirsin.
+[class-diagrams.png](uml/class-diagrams-png) dosyasını açarak tasarımı görsel olarak inceleyebilirsin.
 
 ### 3. Java Kodlarını Çalıştır`uml/sınıf-diyagramı.png`
 
