@@ -1,56 +1,57 @@
 # Object Oriented Programming (OOP) — UML & Java Code
 
-Bu proje, Patika.dev *Object Oriented Programming* kursu için hazırlanmış bir **UML sınıf diyagramı** ve **Java ile OOP tasarımı/uygulaması** örneğidir.
+This project is prepared for the Patika.dev *Object-Oriented Programming* course and presents an example of a **UML class diagram** and **OOP design/implementation using Java**.
 
-Repo şu anda UML tasarımı içerir, ilerleyen sürümlerde Java kaynak kodları eklenerek genişletilecektir.
-
----
-
-## 🚀 Projenin Amacı
-
-Bu repodaki amaç:
-
-- Nesne yönelimli programlama **tasarım ilkelerini** UML ile göstermek.
-- Sınıf ilişkilerini modellemek: *inheritance, associations, aggregation, composition vb.*
-- Java ile nesne yönelimli yapıların uygulanmasını desteklemek.
-- Kodla tasarımı birleştiren bir çalışma sunmak.
+The repository currently contains the UML design. In future versions, it will be expanded by adding Java source code implementations.
 
 ---
-## 📁 Proje Yapısı
+
+## 🚀 Project Purpose
+
+The purpose of this repository is to:
+
+- Demonstrate object-oriented **design principles** using UML.
+- Model class relationships such as *inheritance, association, aggregation, composition, etc*.
+- Support the implementation of object-oriented structures using Java.
+- Present a study that connects design with implementation.
+
+---
+## 📁 Project Structure
 
 ```md
 
-Aşağıdaki gibi organize edilmiştir:
+The project is organized as follows:
 
 📦 object-oriented-programming
 ┣ 📂 docs
-┃ ┗ (Dokümanlar ve açıklamalar)
+┃ ┗ (Documentation and explanations)
 ┣ 📂 src
-┃ ┗ (Java kaynak kodları — ileride eklenecek)
+┃ ┗ (Java source code — to be added later)
 ┣ 📂 uml
-┃ ┣ class-diagram.drawio ← Düzenlenebilir UML kaynağı
-┃ ┗ class-diagram.png ← Görsel UML çıktısı
+┃ ┣ class-diagram.drawio ← Editable UML source
+┃ ┗ class-diagram.png ← UML diagram image
 ┣ 📜 .gitignore
 ┗ 📜 README.md
+
 ```
 ---
 
-## 📌 UML Diyagramı
+## 📌 UML Diagram
 
-UML diyagramı `uml/` klasöründe bulunur:
+The UML diagram is located in the uml/ directory:
 
-- [class-diagram.drawio](uml/class-diagrams-draw.io) → Bu dosyayı draw.io, diagrams.net vb. ile açıp düzenleyebilirsin.
-- [class-diagram.png](uml/class-diagrams-png)  → Diyagramın görsel hali.
+- [class-diagram.drawio](uml/class-diagrams-draw.io)  → This file can be opened and edited using draw.io, diagrams.net, etc.
+- [class-diagram.png](uml/class-diagrams-png)  → The visual representation of the UML diagram.
 
-Bu diyagram, sınıflar arasındaki ilişkileri ve OOP prensiplerini gösterir.
+This diagram illustrates the relationships between classes and core OOP principles.
 
 ---
 
-## 💡 OOP Konseptleri
+## 💡 OOP Concepts
 
-Bu repodaki UML ve sonradan eklenecek Java kodları ile aşağıdaki OOP kavramları gösterilmektedir veya gösterilecek:
+Through the UML diagram and the Java code that will be added later, the following OOP concepts are demonstrated or will be demonstrated:
 
-- **Sınıflar (Classes) ve Nesneler (Objects)**
+- **Classes and Objects**
 - **Encapsulation (Kapsülleme)**
 - **Inheritance (Kalıtım)**
 - **Polymorphism (Çok Biçimlilik)**
@@ -58,50 +59,50 @@ Bu repodaki UML ve sonradan eklenecek Java kodları ile aşağıdaki OOP kavraml
 - **Association, Aggregation, Composition**
 - **Interface ve Abstract Class Kullanımı**
 
-(Detaylı açıklamalar kodlarla birlikte eklendiğinde burada listelenecektir.)
+(Detailed explanations will be listed here together with the code when implementations are added.)
 
 --- 
 
-## 🎯 Hedef
+## 🎯 Goal
 
-Bu repo, OOP kavramlarını sadece teorik olarak değil,
-tasarım (UML) → uygulama (Java) akışıyla öğrenmeyi amaçlar.
+This repository aims to teach OOP concepts not only theoretically, but through a complete workflow from
+design (UML) → implementation (Java).
 
 ---
 
-## 🛠 Nasıl Kullanılır
+## 🛠 How to Use
 
-### 1. Repoyu Klonla
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/tunisch/object-oriented-programming.git
 cd object-oriented-programming
 ```
 
-### 2. UML Dosyasını İncele
+### 2. Review the UML Diagram
 
-[class-diagrams.png](uml/class-diagrams-png) dosyasını açarak tasarımı görsel olarak inceleyebilirsin.
+[class-diagrams.png](uml/class-diagrams-png) Open the file `uml/class-diagram.png` to visually inspect the design.
 
-### 3. Java Kodlarını Çalıştır`uml/sınıf-diyagramı.png`
+### 3. Run the Java Code
 
-`src/` klasörü altında Java dosyaları eklendiğinde:
+When Java files are added under the `src/` directory:
 
 ```bash
 javac src/*.java
 java Main
 ```
 
-> (Not: Şu an src/ boş, ileride eklenecek kodlarla birlikte komut çalışacaktır.)
+> Note: The src/ directory is currently empty. These commands will work once Java source files are added.
 
 --- 
-## 🙌 Katkıda Bulunma
+## 🙌 Contributing
 
-**Bu repo OOP öğrenimi için temel teşkil eder. Şunları yapabilirsin:**
+**This repository serves as a foundation for learning OOP. You are welcome to:**
 
-- Katkı yapmaktan çekinme!
-- UML diyagramlarını geliştir
-- Java kodlarını ekle
-- README içeriklerini genişlet
+- Contribute freely!
+- Improve the UML diagrams
+- Add Java implementations
+- Expand the README documentation
 
-> Herhangi bir PR (Pull Request) veya issue açabilirsin 👍
+> You can open a Pull Request or an Issue at any time 👍
 
